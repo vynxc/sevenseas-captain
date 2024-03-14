@@ -1,6 +1,6 @@
 import { t } from 'elysia';
-import { IGDB } from '../utils/index.js';
-import { AppType } from '../utils/app.js';
+import { IGDB } from '../utils/index';
+import { AppType } from '../utils/app';
 
 export class IGDBRoute {
   private client = new IGDB();

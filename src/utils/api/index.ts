@@ -1,1 +1,1 @@
-export * from './igdb.js';
+export * from './igdb';
