@@ -1,14 +1,9 @@
+
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "."
-      }
-    }
-  ],
-  "routes": [
-    { "src": "/igdb/(.*)", "dest": "/src/routes/igdb.ts" }
+  "github": {
+    "silent": true
+  },
+  "rewrites": [
+    { "source": "/igdb/(.*)", "destination": "/src/index.ts" }
   ]
 }
