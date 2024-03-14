@@ -1,7 +1,7 @@
-import { Elysia } from "elysia";
+import { IGDBRoute } from './routes/igdb';
+import { app } from './utils/app';
 
-const app = new Elysia().get("/", () => "Hello Elysia").listen(3000);
+new IGDBRoute(app);
+app.listen(3000);
 
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
-);
+console.log(`🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`);
