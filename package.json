@@ -2,10 +2,10 @@
   "name": "sevenseas-captain",
   "version": "1.0.50",
   "scripts": {
-    "start": "bun run src/index.ts",
+    "start": "bun run build && bun src/index.ts",
+    "build:vercel": "bun run build",
     "dev": "bun run --watch src/index.ts",
-    "test": "bun test",
-    "build:vercel": "echo 'No build step required'"
+    "test": "bun test"
   },
   "dependencies": {
     "@elysiajs/cors": "^0.8.0",
