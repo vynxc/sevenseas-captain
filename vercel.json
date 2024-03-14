@@ -1,7 +1,14 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "bun run build:vercel",
-  "rewrites": [
-    { "source": "/igdb/(.*)", "destination": "/igdb" }
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "."
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/igdb/(.*)", "dest": "/src/routes/igdb.ts" }
   ]
 }
