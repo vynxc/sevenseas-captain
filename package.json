@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "bun --watch src/index.ts",
     "build": "bun build src/index.ts --target=bun",
-    "start": "NODE_ENV=production bun src/index.ts",
+    "start": "bun src/index.ts",
     "test": "bun test"
   },
   "dependencies": {
