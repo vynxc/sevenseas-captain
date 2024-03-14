@@ -1,5 +1,5 @@
 import { IGDBRoute } from './routes/igdb.js';
-import { app } from './utils/app';
+import { app } from './utils/app.js';
 
 new IGDBRoute(app);
 app.listen(3000);
