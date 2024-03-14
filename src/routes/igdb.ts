@@ -1,5 +1,5 @@
 import { t } from 'elysia';
-import { IGDB } from '../utils';
+import { IGDB } from '../utils/index.js';
 import { AppType } from '../utils/app.js';
 
 export class IGDBRoute {
