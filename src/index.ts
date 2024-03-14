@@ -1,4 +1,4 @@
-import { IGDBRoute } from './routes/igdb';
+import { IGDBRoute } from './routes/igdb.js';
 import { app } from './utils/app';
 
 new IGDBRoute(app);
