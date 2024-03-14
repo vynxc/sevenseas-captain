@@ -17,6 +17,5 @@
     }
   ],
   "installCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install",
-  "buildCommand": "bun build src/index.ts",
-  "startCommand": "bun start src/index.ts"
+  "buildCommand": "bun build src/index.ts"
 }
