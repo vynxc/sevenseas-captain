@@ -1,21 +1,12 @@
 {
-  "$schema": "https://vercel.com/docs/configuration",
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["**"],
-        "bundle": false
-      }
-    }
-  ],
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install --frozen-lockfile",
+  "buildCommand": "~/.bun/bin/bun build src/index.ts",
+  "outputDirectory": "dist",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/index.ts"
+      "dest": "/index.ts"
     }
-  ],
-  "installCommand": "curl -fsSL https://bun.sh/install | bash && ~/.bun/bin/bun install",
-  "buildCommand": "bun build src/index.ts"
+  ]
 }
