@@ -1,6 +1,8 @@
 {
   "name": "sevenseas-captain",
-  "version": "1.0.50",
+  "type": "module",
+
+"version": "1.0.50",
   "scripts": {
     "dev": "bun --watch src/index.ts",
     "build": "bun build src/index.ts",
