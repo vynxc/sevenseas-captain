@@ -2,8 +2,8 @@
   "name": "sevenseas-captain",
   "version": "1.0.50",
   "scripts": {
-    "start": "bun run build && bun src/index.ts",
-    "build:vercel": "bun run build",
+    "start": "bun src/index.ts",
+    "build:vercel": "echo 'No build step required'",
     "dev": "bun run --watch src/index.ts",
     "test": "bun test"
   },
