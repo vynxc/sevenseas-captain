@@ -6,7 +6,6 @@
     "dev": "bun run --watch src/index.ts",
     "test": "bun test",
     "build:vercel": "echo 'No build step required'"
-
   },
   "dependencies": {
     "@elysiajs/cors": "^0.8.0",
