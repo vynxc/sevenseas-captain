@@ -1,11 +1,11 @@
-import { env } from 'bun';
+
 import igdb from 'igdb-api-node';
 
 // TODO: auto get access_token
 
 export class IGDB {
-  clientId: string = env.TWITCH_CLIENT_ID;
-  clientAccessToken: string = env.TWITCH_ACCESS_TOKEN;
+  clientId: string = process.env.TWITCH_CLIENT_ID;
+  clientAccessToken: string = process.env.TWITCH_ACCESS_TOKEN;
 
   client = igdb(this.clientId, this.clientAccessToken);
 
