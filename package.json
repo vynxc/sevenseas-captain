@@ -2,7 +2,7 @@
   "name": "sevenseas-captain",
   "version": "1.0.50",
   "scripts": {
-    "build": "bun-vercel src/main.ts",
+    "build": "bun-vercel ./src/main.ts",
     "start": "NODE_ENV=production bun src/index.ts",
     "test": "bun test"
   },
